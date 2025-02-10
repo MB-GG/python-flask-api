@@ -28,7 +28,7 @@ class Item(Resource):
 			200:
 				description: Успешный запрос
 			404:
-				description: Хуевый запрос
+				description: Плохой запрос
 		"""
 		if item_id in DATABASE:
 			return jsonify({"item_id": item_id, "value": DATABASE[item_id]})
